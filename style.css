@@ -3,6 +3,8 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;}
 
 ul {
@@ -10,6 +12,7 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
+    padding-right: 350px;
 }
 
 .header {
@@ -20,6 +23,7 @@ ul {
 
 .catlogo {
     width: 7%;
+    padding-left: 250px;
 }
 
 .topcontent, .header {
@@ -43,8 +47,6 @@ ul {
 
 .moveimg {
     border: yellow solid 3px;
-    display: flex;
-    flex: 1;
 }
 
 
@@ -57,11 +59,11 @@ ul {
     background-color: #1f2937;
 } */
 
-.fontsize {
+.headerinfo {
     font-size: 30px;
 }
 
-.fontsize1 {
+.parainfo {
     font-size: 15px;
 }
 
@@ -87,12 +89,12 @@ ul {
 }
 
 .midinfo {
-    max-width: 200px;
+    max-width: 120px;
 }
 
 .midinfo img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: rgb(82, 82, 150) solid 4px;
     border-radius: 5px;
 }
@@ -105,23 +107,40 @@ ul {
     margin-top: 50px;
 }
 
+.qinfo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
 .lowercontent {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
     color: whitesmoke;
+}
+
+.qinfo {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .container-1 {
     background: rgb(92, 154, 247);
-    padding: 30px;
+    padding: 60px;
     margin: 60px;
-    width: 800px;
+    width: 1000px;
     border-radius: 10px;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
     display: flex;
-    align-items: center;
-    justify-content: space-around
+    flex-direction: column;
+    justify-content: center;
+    border: yellow solid 3px;
+}
+
+.buttondiv button {
+    display: inline-block;
+    justify-content: flex-end;
+    border: yellow solid 3px;
 }
 
 
